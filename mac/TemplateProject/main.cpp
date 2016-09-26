@@ -115,6 +115,11 @@ void init() {
     };
     glBufferData(GL_ARRAY_BUFFER, 12*sizeof(GLfloat), sqTexCoords, GL_STATIC_DRAW);
     
+    // Blending
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glClearColor(0.5, 0.5, 0.5, 1.0); // set the clear color
+    
 }
 
 void reshape(int w, int h) {
