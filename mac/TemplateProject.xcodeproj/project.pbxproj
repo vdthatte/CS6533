@@ -36,6 +36,7 @@
 		6D5ABB371D7EA72800E93B80 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		C2DF4E111D9898E8007B794C /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		C2DF4E121D989915007B794C /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		C2DF4E131D989C5B007B794C /* emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		6D5ABB271D7E261400E93B80 /* TemplateProject */ = {
 			isa = PBXGroup;
 			children = (
+				C2DF4E131D989C5B007B794C /* emoji.png */,
 				6D5ABB351D7EA08900E93B80 /* glsupport.h */,
 				6D5ABB361D7EA08900E93B80 /* matrix4.h */,
 				6D5ABB371D7EA72800E93B80 /* stb_image.h */,
