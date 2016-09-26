@@ -109,7 +109,6 @@ void init() {
     };
     glBufferData(GL_ARRAY_BUFFER, 12*sizeof(GLfloat), sqTexCoords, GL_STATIC_DRAW);
     
-    
 }
 
 void reshape(int w, int h) {
