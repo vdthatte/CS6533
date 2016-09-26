@@ -9,6 +9,7 @@ GLuint textCoordAttribute;
 GLuint vertTexCoordVBO;
 GLuint emojiTexture;
 GLuint positionUniform;
+GLuint timeUniform;
 
 /*
  
@@ -54,6 +55,9 @@ GLuint positionUniform;
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT);
     
+    int timeSinceStart = glutGet(GLUT_ELAPSED_TIME);
+    glUniform1f(timeUniform, (float)timeSinceStart/1000.0f);
+    
     glBindBuffer(GL_ARRAY_BUFFER, vertPositionVBO);
     glVertexAttribPointer(positionAttribute, 2, GL_FLOAT, GL_FALSE, 0, 0);
     glEnableVertexAttribArray(positionAttribute);
@@ -88,6 +92,7 @@ void init() {
     
     // Getting locations of the new attribute on the C++ side.
     textCoordAttribute = glGetAttribLocation(program, "texCoord");
+    timeUniform = glGetUniformLocation(program, "time");
     
     // Create a vertex buffer object
     glGenBuffers(1, &vertPositionVBO);
