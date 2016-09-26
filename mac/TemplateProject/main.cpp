@@ -8,6 +8,7 @@ GLuint positionAttribute;
 GLuint textCoordAttribute;
 GLuint vertTexCoordVBO;
 GLuint emojiTexture;
+GLuint positionUniform;
 
 /*
  
@@ -59,8 +60,13 @@ void display(void) {
     glBindBuffer(GL_ARRAY_BUFFER, vertTexCoordVBO);
     glVertexAttribPointer(textCoordAttribute, 2, GL_FLOAT, GL_FALSE, 0, 0);
     glEnableVertexAttribArray(textCoordAttribute);
+    
     glBindTexture(GL_TEXTURE_2D, emojiTexture);
+    //glUniform2f(positionUniform, -0.5, 0.0);
+    //glDrawArrays(GL_TRIANGLES, 0, 6);
+    glUniform2f(positionUniform, 0.5, 0.5);
     glDrawArrays(GL_TRIANGLES, 0, 6);
+    
     glDisableVertexAttribArray(positionAttribute);
     glDisableVertexAttribArray(textCoordAttribute);
     
@@ -96,7 +102,7 @@ void init() {
     };
     glBufferData(GL_ARRAY_BUFFER, 12*sizeof(GLfloat), sqVerts, GL_STATIC_DRAW);
     
-    emojiTexture = loadGLTexture("/Users/Vidyadhar/Desktop/Github/CS6533 - myVersion/mac/TemplateProject/emoji.png");
+    emojiTexture = loadGLTexture("/Users/Vidyadhar/Desktop/Github/CS6533 - myVersion/mac/TemplateProject/illuminati.png");
         glGenBuffers(1, &vertTexCoordVBO);
     glBindBuffer(GL_ARRAY_BUFFER, vertTexCoordVBO);
     GLfloat sqTexCoords[12] = {

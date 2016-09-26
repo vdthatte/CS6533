@@ -35,6 +35,7 @@
 		6D5ABB361D7EA08900E93B80 /* matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix4.h; sourceTree = "<group>"; };
 		6D5ABB371D7EA72800E93B80 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		C23A79841D9990D300981BA6 /* emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji.png; sourceTree = "<group>"; };
+		C23A79851D999E1800981BA6 /* illuminati.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illuminati.png; sourceTree = "<group>"; };
 		C2DF4E111D9898E8007B794C /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 		C2DF4E121D989915007B794C /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 		6D5ABB271D7E261400E93B80 /* TemplateProject */ = {
 			isa = PBXGroup;
 			children = (
+				C23A79851D999E1800981BA6 /* illuminati.png */,
 				C23A79841D9990D300981BA6 /* emoji.png */,
 				6D5ABB351D7EA08900E93B80 /* glsupport.h */,
 				6D5ABB361D7EA08900E93B80 /* matrix4.h */,
