@@ -19,6 +19,6 @@ varying vec2 varyingTexCoord;
 uniform sampler2D texture;
 uniform float time;
 void main() {
-    vec2 texCoord = vec2(varyingTexCoord.x + time, varyingTexCoord.y);
+    vec2 texCoord = vec2(varyingTexCoord.x, varyingTexCoord.y);
     gl_FragColor = texture2D(texture, texCoord);
 }

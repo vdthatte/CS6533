@@ -30,6 +30,7 @@ void display(void) {
     
     glBindTexture(GL_TEXTURE_2D, emojiTexture);
     glUniform2f(positionUniform, 0.5, 0.0);
+    
     glDrawArrays(GL_TRIANGLES, 0, 6);
     
     glBindTexture(GL_TEXTURE_2D, illuminatiTexture);

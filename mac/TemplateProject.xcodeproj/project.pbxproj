@@ -74,8 +74,7 @@
 		6D5ABB271D7E261400E93B80 /* TemplateProject */ = {
 			isa = PBXGroup;
 			children = (
-				C23A79851D999E1800981BA6 /* illuminati.png */,
-				C23A79841D9990D300981BA6 /* emoji.png */,
+				C23A79861D9AEED000981BA6 /* images */,
 				6D5ABB351D7EA08900E93B80 /* glsupport.h */,
 				6D5ABB361D7EA08900E93B80 /* matrix4.h */,
 				6D5ABB371D7EA72800E93B80 /* stb_image.h */,
@@ -85,6 +84,15 @@
 				C2DF4E121D989915007B794C /* fragment.glsl */,
 			);
 			path = TemplateProject;
+			sourceTree = "<group>";
+		};
+		C23A79861D9AEED000981BA6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C23A79851D999E1800981BA6 /* illuminati.png */,
+				C23A79841D9990D300981BA6 /* emoji.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
