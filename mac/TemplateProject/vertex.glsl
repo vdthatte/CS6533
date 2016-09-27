@@ -16,7 +16,12 @@
 attribute vec4 position;
 attribute vec2 texCoord;
 varying vec2 varyingTexCoord;
+uniform vec2 modelPosition;
+uniform vec4 positionUniform;
+
+
 void main() {
     varyingTexCoord = texCoord;
-    gl_Position = position;
+    //gl_Position = vec4(modelPosition.x, modelPosition.y, 0.0, 0.0) + position + positionUniform;
+    gl_Position = position + positionUniform; // change the position using a shader uniform in the vertex shader
 }
